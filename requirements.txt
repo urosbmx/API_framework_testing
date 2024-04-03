@@ -1,2 +1,6 @@
 pytest~=8.1.1
 requests~=2.31.0
+pytest-jira-xray~=0.8.11
+pytest-jira~=0.3.19
+retry~=0.9.2
+marshmallow~=3.2.0

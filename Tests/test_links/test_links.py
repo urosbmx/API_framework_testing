@@ -3,6 +3,7 @@ import requests
 
 class Test_links_all_sites:
 
+    @pytest.mark.jira('API-1')
     @pytest.mark.parametrize("url", ["posts", "comments", "albums", "photos", "todos", "users"])
     def test_all_links(self, url):
         api_url = f"https://jsonplaceholder.typicode.com/{url}"

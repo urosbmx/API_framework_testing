@@ -6,6 +6,7 @@ import logging
 
 class Test_user:
 
+    @pytest.mark.xray('JIRA-1')
     def test_count_response(self):
         api_url = "https://jsonplaceholder.typicode.com/users"
         r = requests.get(api_url)
