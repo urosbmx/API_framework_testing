@@ -3,10 +3,11 @@ from itertools import count
 import pytest
 import requests
 import logging
+import conftest
 
 class Test_user:
 
-    @pytest.mark.xray('JIRA-1')
+    @pytest.mark.xray("API-10")
     def test_count_response(self):
         api_url = "https://jsonplaceholder.typicode.com/users"
         r = requests.get(api_url)
