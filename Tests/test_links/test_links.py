@@ -1,5 +1,7 @@
 import pytest
 import requests
+import os
+
 class Test_links_all_sites:
 
     @pytest.mark.xray("API-1")

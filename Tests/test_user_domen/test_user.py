@@ -1,8 +1,7 @@
-from itertools import count
-
 import pytest
 import requests
 import logging
+import os
 
 
 class Test_user:

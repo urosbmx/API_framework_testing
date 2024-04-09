@@ -27,6 +27,9 @@ jobs:
             echo XRAY_CLIENT_ID=${{ secrets.XRAY_CLIENT_ID }} >> .env
             echo XRAY_CLIENT_SECRET=${{ secrets.XRAY_CLIENT_SECRET }}.env
             cat .env
+            echo import os >> .venv/lib/python3.12/site-packages/pytest_xray/constant.py
+            echo from dotenv import load_dotenv, dotenv_values >> .venv/lib/python3.12/site-packages/pytest_xray/constant.py
+            echo load_dotenv() >> .venv/lib/python3.12/site-packages/pytest_xray/constant.py
 
       - name: Run Tests
         run: pytest --jira-xray --cloud --client-secret-auth
