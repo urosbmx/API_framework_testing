@@ -19,7 +19,7 @@ This repository contains a Python-based automation framework for testing APIs, i
 2. Navigate to the project directory:
 
    ```bash
-   cd your_repo
+   cd API_framework_testing
    ```
 
 3. Install the required dependencies:
