@@ -20,13 +20,13 @@ jobs:
 
       - name: 'Create env file'
         run: |
-            touch .env
-            echo XRAY_API_BASE_URL=https://xray.cloud.getxray.app >> .env
-            echo XRAY_EXECUTION_TEST_ENVIRONMENTS="QA" >> .env
-            echo XRAY_EXECUTION_SUMMARY="Smoke tests" >> .env
-            echo XRAY_CLIENT_ID=${{ secrets.XRAY_CLIENT_ID }} >> .env
-            echo XRAY_CLIENT_SECRET=${{ secrets.XRAY_CLIENT_SECRET }}.env
-            cat .env
+          touch .env
+          echo XRAY_API_BASE_URL=https://xray.cloud.getxray.app >> .env
+          echo XRAY_EXECUTION_TEST_ENVIRONMENTS="QA" >> .env
+          echo XRAY_EXECUTION_SUMMARY="Smoke tests" >> .env
+          echo XRAY_CLIENT_ID=${{ secrets.XRAY_CLIENT_ID }} >> .env
+          echo XRAY_CLIENT_SECRET=${{ secrets.XRAY_CLIENT_SECRET }} >> .env
+          cat .env
 
       - name: Run Tests
         run: pytest --jira-xray --cloud --client-secret-auth
