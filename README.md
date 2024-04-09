@@ -50,6 +50,9 @@ The GitHub Actions workflow is configured to trigger automated tests on specific
 
 To integrate with Jira, make sure you have valid API credentials and project details. Update the `.env` file with your Jira configuration.
 
+### Test Reporting in Jira with pluging [pytest-jira-xray](https://pypi.org/project/pytest-jira-xray/)
+![Jira Integration](https://i.ibb.co/8Y8q3VC/Screenshot-2024-04-09-at-23-02-49.png)
+
 ## Contributing
 
 We welcome contributions to improve and extend this automation framework. To contribute:
