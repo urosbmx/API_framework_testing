@@ -3,7 +3,7 @@ from itertools import count
 import pytest
 import requests
 import logging
-import conftest
+
 
 class Test_user:
 
