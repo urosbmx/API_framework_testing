@@ -69,4 +69,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Contact
 
-For any inquiries or support, please contact [Your Name](mailto:your_email@example.com).
+For any inquiries or support, please contact [Uros](mailto:your_email@example.com).
