@@ -67,4 +67,4 @@ jobs:
 
       - name: Run if checkbox is not checked
         if: ${{ github.event.inputs.trigger-code == 'false' }}
-        run: pytest --jira-xray --cloud --client-secret-auth
+        run: pytest
