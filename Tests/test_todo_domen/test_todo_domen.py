@@ -3,7 +3,6 @@ from itertools import count
 import pytest
 import requests
 import logging
-import os
 
 
 # TODO This is place where we can take endpoints for testing
